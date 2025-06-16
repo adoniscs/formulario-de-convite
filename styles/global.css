@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 :root {
@@ -44,19 +43,37 @@
   --font-family-heading: "Baloo 2", sans-serif;
   --font-family-text: "Open Sans", sans-serif;
 
-  --font-logo: 400 40px/auto var(--font-family-logo);
-  --heading-md: 700 28rem/120% var(--font-family-heading);
-  --heading-sm: 700 18px/auto var(--font-family-heading);
+  --text-font-logo: 400 40px/120% var(--font-family-logo);
+  --text-heading-md: 700 28px/120% var(--font-family-heading);
+  --text-heading-sm: 700 18px/120% var(--font-family-heading);
 
-  --body-md-regular: 400 16px/auto var(--font-family-text);
-  --body-sm-regular: 400 14px/auto var(--font-family-text);
-  --body-xs-regular: 400 12px/auto var(--font-family-text);
+  --text-body-md-regular: 400 16px/120% var(--font-family-text);
+  --text-body-sm-regular: 400 14px/120% var(--font-family-text);
+  --text-body-xs-regular: 400 12px/120% var(--font-family-text);
 
-  --body-md-semibold: 600 16px/auto var(--font-family-text);
-  --body-sm-semibold: 600 14px/auto var(--font-family-text);
-  --body-xs-semibold: 600 12px/auto var(--font-family-text);
+  --text-body-md-semibold: 600 16px/120% var(--font-family-text);
+  --text-body-sm-semibold: 600 14px/120% var(--font-family-text);
+  --text-body-xs-semibold: 600 12px/120% var(--font-family-text);
 }
 
-body{  background-color: var(--danger);
+body {
+  background-color: var(--shape-body);
+  color: var(--text-body);
+  font: var(--text-body-md-regular);
+}
+
+h2 {
+  font: var(--text-heading-md);
+  color: var(--text-heading);
+}
+
+h3 {
+  font: var(--text-heading-sm);
+  color: var(--text-heading);
+}
+
+label {
+  color: var(--text-body);
+  font: var(--text-body-sm-regular);
 }
 
