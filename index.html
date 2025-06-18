@@ -26,6 +26,63 @@
         </header>
       </div>
     </aside>
+
+    <main>
+      <div class="main-container">
+        <h2>Crie seu convite</h2>
+
+        <form enctype="multipart/form-data" action="#" method="post">
+
+          <fieldset class="about-event">
+            <legend>
+              <img src="./assets/icons/calendar.svg" alt="">
+              Sobre o evento
+            </legend>
+
+            <div class="input-wrapper">
+              <label for="title">Título</label>
+              <input id="title" name="title" type="text" placeholder="Nome do evento">
+            </div>
+
+            <div class="date-wrapper">
+              <label for="date-time-initial">Início</label>
+              <input type="datetime" name="date-time-initial" id="date-time-initial" lang="pt-br" placeholder="DD/MM/AAAA, --:--">
+
+              <label for="date-time-finished">Fim</label>
+              <input type="datetime" name="date-time-finished" id="date-time-finished" lang="pt-br"  placeholder="DD/MM/AAAA, --:--">
+            </div>
+
+            <div class="type-radio-wrapper">
+              <label for="">Tipo</label>
+              <div class="radio-inner">
+                <img src="./assets/icons/building-2.svg" alt="">
+                <input type="radio" name="type" value="presencial" id="presencial">
+                <label for="presencial">Presencial</label>
+              </div>
+
+              <div class="radio-inner">
+                <img src="./assets/icons/video.svg" alt="">
+                <input type="radio" name="type" value="online" id="online">
+                <label for="online">Online</label>
+              </div>
+            </div>
+
+            <div class="locale-wrapper">
+              <label for="link-or-address">Local</label>
+              <input id="link-or-address" name="link-or-address" type="link-or-address" placeholder="Link ou endereço">
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="description">Descrição</label>
+              <textarea name="description" id="description" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
+            </div>
+
+
+
+          </fieldset>
+        </form>
+      </div>
+    </main>
   </div>
 </body>
 
